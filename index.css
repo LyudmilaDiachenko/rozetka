@@ -4,16 +4,3 @@ body{
     font-family: Arial,Segoe UI,Roboto,Helvetica,sans-serif;
 }
 
-.main{
-    width: 100%;
-}
-
-.menu{
-    float: left;
-    width: 200px;
-    background-color: greenyellow;
-}
-
-.content{
-    background-color: lightblue;
-}

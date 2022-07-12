@@ -663,17 +663,13 @@
 
 .content-promo-li .box-container{
     height: 350px;
+    position: relative;
     box-sizing: border-box;
     border-right: 1px solid #e9e9e9;
     border-bottom: 1px solid #e9e9e9;
     padding: 16px;
 }
 
-
-.promo-checkbox{
-    position: relative;
-    padding: 16px;
-}
 
 .content-promo-img-container{
     display: flex;
@@ -747,31 +743,33 @@
     display: none;
 }
 
-.promo-checkbox label{
+.promo-checkbox{
+    position: absolute; 
+    left: 115px;
     width: 32px; 
-    height: 26px;
-    display: block;
-    position: relative;
+    height: 32px;
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid white;
+}
+.promo-checkbox:hover{
+    border: 2px solid lightblue;
 }
 
-.promo-checkbox input{
-    position: absolute; 
-    left: 115px;
-    top: -15px;
+.promo-checkbox input[type="checkbox"]{
+    display: none;
 }
 
-.promo-checkbox input[type="checkbox"] + span{
-    position: absolute; 
-    left: 115px;
-    top: -15px;
+.promo-checkbox input[type="checkbox"]+span{
     width: 100%; 
     height: 100%;
-    background: url("img/hart.jpg") no-repeat;
+    display: block;
+    background: url("img/hart.jpg") center no-repeat;
 }
 
-.promo-checkbox input[type="checkbox"]:checked + span{
+.promo-checkbox input[type="checkbox"]:checked+span{
     background-position: 0 -26px;
-    background: url("img/paint-hart.jpg") no-repeat;
+    background: url("img/paint-hart.jpg") center no-repeat;
 }
 
 .more-target{

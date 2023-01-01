@@ -78,6 +78,13 @@
     width: 500px;
 }
 
+.search-write:active,
+.search-write:hover,
+.search-write:focus-visible{
+    outline: 0;
+    outline-offset: 0;
+}
+
 .search-text {
     margin-left: -30px;
     background-color: #ffffff;
